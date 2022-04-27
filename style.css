@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 15fr 1fr;
     grid-template-rows: 45vh 45vh 10vh 6fr 1fr;
-    background-image: url(images/galax.jpg);
+    background-image: url(Images/galax.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -55,48 +55,48 @@ body {
 }
 
 .oursystem {
-    background-image: url(images/.jpg);
+    background-image: url(Images/.jpg);
 }
 
 .thesun {
-    background-image: url(images/Solen.jpg);
+    background-image: url(Images/Solen.jpg);
 }
 
 .mercury {
-    background-image: url(images/Mercury.jpg);
+    background-image: url(Images/Mercury.jpg);
 }
 
 .venus {
-    background-image: url(images/Venus.jpg);
+    background-image: url(Images/Venus.jpg);
 }
 
 .earth {
-    background-image: url(images/Jorden.jpg);
+    background-image: url(Images/Jorden.jpg);
 }
 
 .mars {
-    background-image: url(images/Mars.jpg);
+    background-image: url(Images/Mars.jpg);
 }
 
 .jupiter {
-    background-image: url(images/Jupiter.jpg);
+    background-image: url(Images/Jupiter.jpg);
 }
 
 .saturn {
     grid-column: span 2;
-    background-image: url(images/Saturn.jpg);
+    background-image: url(Images/Saturn.jpg);
 }
 
 .uranus {
-    background-image: url(images/Uranus.jpg);
+    background-image: url(Images/Uranus.jpg);
 }
 
 .neptune {
-    background-image: url(images/Neptune.jpg);
+    background-image: url(Images/Neptune.jpg);
 }
 
 .pluto {
-    background-image: url(images/Pluto.jpg);
+    background-image: url(Images/Pluto.jpg);
 }
 
 .content {
