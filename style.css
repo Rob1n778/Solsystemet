@@ -1,8 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-image: url(images/javier-miranda-Jn2EaLLYZfY-unsplash.jpg);
-    background-size: cover;
+    font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
@@ -10,7 +8,10 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 15fr 1fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-rows: 45vh 45vh 10vh 6fr 1fr;
+    background-image: url(images/galax.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .wrapper > * {
@@ -18,22 +19,95 @@ body {
 }
 
 .header {
-    padding-left: 10px;
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 2fr repeat(6, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
 }
 
-.header > * > a {
+.header > a {
+    text-decoration: none;
+}
+
+.title {
+    margin: 0;
     color: #fff;
 }
 
-.content {
+.navigation {
+    grid-column: 1 / -1;
     grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 2fr repeat(10, 1fr);
+}
+
+.navigation > * > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.planets {
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.oursystem {
+    background-image: url(images/.jpg);
+}
+
+.thesun {
+    background-image: url(images/Solen.jpg);
+}
+
+.mercury {
+    background-image: url(images/Mercury.jpg);
+}
+
+.venus {
+    background-image: url(images/Venus.jpg);
+}
+
+.earth {
+    background-image: url(images/Jorden.jpg);
+}
+
+.mars {
+    background-image: url(images/Mars.jpg);
+}
+
+.jupiter {
+    background-image: url(images/Jupiter.jpg);
+}
+
+.saturn {
+    grid-column: span 2;
+    background-image: url(images/Saturn.jpg);
+}
+
+.uranus {
+    background-image: url(images/Uranus.jpg);
+}
+
+.neptune {
+    background-image: url(images/Neptune.jpg);
+}
+
+.pluto {
+    background-image: url(images/Pluto.jpg);
+}
+
+.content {
+    grid-row: 4 / 5;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
+}
+
+.box {
+    min-height: 300px;
 }
 
 .box1 {
@@ -44,12 +118,17 @@ body {
     background-color: darkred;
 }
 
+.box3 {
+    background-color: darkgoldenrod;
+}
+
+.box4 {
+    background-color: darkgreen;
+}
+
 .footer {
     background-color: darkcyan;
     grid-column: 1 / -1;
     grid-row: -2 / -1;
 }
 
-a {
-    text-decoration: none;
-}
