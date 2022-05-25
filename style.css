@@ -46,17 +46,19 @@ body {
     grid-template-columns: 2fr repeat(10, 1fr);
 }
 
-.navigation > * > a {
-    color: #fff;
+.planets {
+    background-size: cover;
+}
+
+a {
     text-decoration: none;
 }
 
-.planets {
-    background-size: cover;
-    border-radius: 25px 25px 0 0;
+.presstext {
+    color: rgba(0, 0 , 0, 0);
+    font-size: 1.6em;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 
 .oursystem {
@@ -64,44 +66,44 @@ body {
 }
 
 .thesun {
-    background-image: url(Images/Solen.jpg);
+    background-image: url(Images/Solen_png.png);
 }
 
 .mercury {
-    background-image: url(Images/Mercury.jpg);
+    background-image: url(Images/Mercury_png_rotated.png);
 }
 
 .venus {
-    background-image: url(Images/Venus.jpg);
+    background-image: url(Images/Venus_png.png);
 }
 
 .earth {
-    background-image: url(Images/Jorden.jpg);
+    background-image: url(Images/Jorden_png.png);
 }
 
 .mars {
-    background-image: url(Images/Mars.jpg);
+    background-image: url(Images/Mars_png.png);
 }
 
 .jupiter {
-    background-image: url(Images/Jupiter.jpg);
+    background-image: url(Images/Jupiter_png.png);
 }
 
 .saturn {
     grid-column: span 2;
-    background-image: url(Images/Saturn.jpg);
+    background-image: url(Images/Saturn_png.png);
 }
 
 .uranus {
-    background-image: url(Images/Uranus.jpg);
+    background-image: url(Images/Uranus_png.png);
 }
 
 .neptune {
-    background-image: url(Images/Neptune.jpg);
+    background-image: url(Images/Neptune_png.png);
 }
 
 .pluto {
-    background-image: url(Images/Pluto.jpg);
+    background-image: url(Images/Pluto_png.png);
 }
 
 .content {
@@ -111,13 +113,36 @@ body {
     grid-auto-rows: 1fr;
 }
 
-.box {
-    min-height: 300px;
-    background-color: #222;
+.left {
+    grid-column: 1 / 2;
+    background-color: #000;
+    min-height: 100vh;
 }
 
-.box > p {
+.right {
+    grid-column: -2 / -1;
+    background-color: #000;
+}
+
+.box {
+    min-height: 500px;
     color: #fff;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 10fr;
+}
+
+.textheader {
+    grid-column: 1 / -1;
+    padding-left: 2%;
+    font-size: 2.5em;
+}
+
+.text {
+    padding-left: 2%;
+    padding-right: 40%;
+    word-wrap: break-word;
 }
 
 .footer {
