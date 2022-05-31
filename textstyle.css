@@ -1,0 +1,83 @@
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(Images/galax.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 15fr 1fr;
+}
+
+.navigation {
+    grid-column: 1 / -1;
+    font-size: 1vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr repeat(10, 1fr);
+}
+
+.links:hover {
+    background-color: #222;
+}
+
+.links > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.box {
+    color: #fff;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+.textheader {
+    grid-column: 1 / -1;
+    padding-left: 2%;
+    margin: 1vw 0 1vw 0;
+    font-size: 3vw;
+}
+
+.text {
+    padding-left: 3.5%;
+    margin: 0%;
+    font-size: 1vw;
+    word-wrap: break-word;
+}
+
+.image {
+    background-image: url(Images/Solen.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.footer {
+    background-color: darkcyan;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 1000px) {
+    .navigation {
+        grid-template-columns: 2fr repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
