@@ -10,7 +10,7 @@
 //	the top of the page.
 
 
-var displayed = "<nobr><font size=2 face=Arial><b>[Top]</b></font></nobr>"
+var displayed = "<nobr class='toppen'>[Topapi]yy</nobr>"
 
 // === DO NOT EDIT ANYTHING BELOW THIS LINE!!! === //
 
