@@ -54,13 +54,31 @@ body {
 
 .textheader {
     grid-column: 1 / -1;
-    padding-left: 2%;
+    padding-left: 3%;
     margin: 1.5vw 0 1.5vw 0;
     font-size: 3vw;
 }
 
 .text {
     padding-left: 3%;
+    padding-bottom: 3%;
+    margin: 0;
+    font-size: 2vw;
+    word-wrap: break-word;
+}
+
+.boxaboutus {
+    color: #fff;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.textaboutus {
+    grid-template-columns: 1 / -1;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-bottom: 3%;
     margin: 0;
     font-size: 2vw;
@@ -133,7 +151,7 @@ body {
 }
 
 .footerp {
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 .aboutus {

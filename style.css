@@ -114,7 +114,7 @@ body {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     font-size: 1.1vw;
     font-weight: bold;
 }
@@ -205,6 +205,12 @@ body {
     font-size: 1vw;
 }
 
-.toppen {
+#logo {
+    grid-column: 5 / 6;
+    grid-row: 12 / 13;
+    color: #fff;
     background-color: orange;
+    padding: 1%;
+    border-radius: 25%;
+    font-size: 2vw;
 }

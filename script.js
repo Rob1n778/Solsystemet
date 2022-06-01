@@ -10,7 +10,7 @@
 //	the top of the page.
 
 
-var displayed = "<nobr class='toppen'>[Topapi]yy</nobr>"
+var displayed = "<nobr class='toppen'>Top</nobr>"
 
 // === DO NOT EDIT ANYTHING BELOW THIS LINE!!! === //
 
