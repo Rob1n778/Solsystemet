@@ -15,6 +15,7 @@ body {
 }
 
 .navigation {
+    margin-right: 1%;
     grid-column: 1 / -1;
     font-size: 1.3vw;
     display: grid;
