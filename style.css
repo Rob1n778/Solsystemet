@@ -52,12 +52,12 @@ body {
     width: auto; 
 }
 
-a {
+.planets > a {
     text-decoration: none;
 }
 
 .presstext {
-    color: rgba(0, 0, 0, 0);
+    color: transparent;
     font-size: 1.8vw;
     display: flex;
     justify-content: center;
@@ -109,8 +109,100 @@ a {
 }
 
 .footer {
-    background-color: darkcyan;
+    background-color: #000;
+    color: #fff;
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.aboutus {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.contactus {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.email {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    font-size: 1vw;
+}
+
+.footersystem {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.footersun {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    font-size: 1vw;
+}
+
+.footermercury {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    font-size: 1vw;
+}
+
+.footervenus {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+    font-size: 1vw;
+}
+
+.footerearth {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+    font-size: 1vw;
+}
+
+.footermars {
+    grid-column: 4 / 5;
+    grid-row: 7 / 8;
+    font-size: 1vw;
+}
+
+.footerjupiter {
+    grid-column: 4 / 5;
+    grid-row: 8 / 9;
+    font-size: 1vw;
+}
+
+.footersaturn {
+    grid-column: 4 / 5;
+    grid-row: 9 / 10;
+    font-size: 1vw;
+}
+
+.footeruranus {
+    grid-column: 4 / 5;
+    grid-row: 10 / 11;
+    font-size: 1vw;
+}
+
+.footerneptunus {
+    grid-column: 4 / 5;
+    grid-row: 11 / 12;
+    font-size: 1vw;
+}
+
+.footerpluto {
+    grid-column: 4 / 5;
+    grid-row: 12 / 13;
+    font-size: 1vw;
 }
 
 .toppen {

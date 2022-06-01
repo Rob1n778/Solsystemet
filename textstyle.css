@@ -12,7 +12,7 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr 20fr 1fr;
-    grid-template-rows: 1fr 15fr 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 .navigation {
@@ -24,10 +24,10 @@ body {
 }
 
 .links:hover {
-    background-color: #222;
+    background: #222;
 }
 
-.links > a {
+.links a {
     color: #fff;
     text-decoration: none;
 }
@@ -35,6 +35,7 @@ body {
 .content {
     grid-column: 2 / 3;
     grid-row: 2;
+    min-height: 92vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -44,40 +45,244 @@ body {
     color: #fff;
     background-color: #222;
     display: grid;
-    grid-template-columns: 6fr 4fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 6fr 3fr;
+    grid-template-rows: auto 1fr;
 }
 
 .textheader {
     grid-column: 1 / -1;
     padding-left: 2%;
-    margin: 1vw 0 1vw 0;
+    margin: 1.5vw 0 1.5vw 0;
     font-size: 3vw;
 }
 
 .text {
-    padding-left: 3.5%;
-    margin: 0%;
-    font-size: 1vw;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    margin: 0;
+    font-size: 1.6vw;
     word-wrap: break-word;
 }
 
 .image {
-    background-image: url(Images/Solen.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 1vw;
     margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+.imagesun {
+    background-image: url(Images/Solen.jpg);
+}
+
+.imagemercury {
+    background-image: url(Images/Mercury.jpg);
+}
+
+.imagevenus {
+    background-image: url(Images/Venus.jpg);
+}
+
+.imageearth {
+    background-image: url(Images/Jorden.jpg);
+}
+
+.imagemars {
+    background-image: url(Images/Mars.jpg);
+}
+
+.imagejupiter {
+    background-image: url(Images/Jupiter.jpg);
+}
+
+.imagesaturn {
+    background-image: url(Images/saturn_full.jpg);
+}
+
+.imageuranus {
+    background-image: url(Images/Uranus.jpg);
+}
+
+.imageneptune {
+    background-image: url(Images/Neptune.jpg);
+}
+
+.imagepluto {
+    background-image: url(Images/Pluto.jpg);
 }
 
 .footer {
-    background-color: darkcyan;
+    background-color: #000;
+    color: #fff;
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.aboutus {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.contactus {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.email {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    font-size: 1vw;
+}
+
+.footersystem {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.footersun {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    font-size: 1vw;
+}
+
+.footermercury {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    font-size: 1vw;
+}
+
+.footervenus {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+    font-size: 1vw;
+}
+
+.footerearth {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+    font-size: 1vw;
+}
+
+.footermars {
+    grid-column: 4 / 5;
+    grid-row: 7 / 8;
+    font-size: 1vw;
+}
+
+.footerjupiter {
+    grid-column: 4 / 5;
+    grid-row: 8 / 9;
+    font-size: 1vw;
+}
+
+.footersaturn {
+    grid-column: 4 / 5;
+    grid-row: 9 / 10;
+    font-size: 1vw;
+}
+
+.footeruranus {
+    grid-column: 4 / 5;
+    grid-row: 10 / 11;
+    font-size: 1vw;
+}
+
+.footerneptunus {
+    grid-column: 4 / 5;
+    grid-row: 11 / 12;
+    font-size: 1vw;
+}
+
+.footerpluto {
+    grid-column: 4 / 5;
+    grid-row: 12 / 13;
+    font-size: 1vw;
 }
 
 @media (max-width: 1000px) {
+
+    .wrapper {
+        grid-template-columns: auto 1fr auto;
+    }
+
     .navigation {
         grid-template-columns: 2fr repeat(5, 1fr);
         grid-template-rows: 1fr 1fr;
+    }
+
+    .oursystem {
+        grid-row: 1 / -1;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    .image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+    }
+    
+    .imagesun {
+        background-image: url(Images/Solen.jpg);
+    }
+    
+    .imagemercury {
+        background-image: url(Images/Mercury.jpg);
+    }
+    
+    .imagevenus {
+        background-image: url(Images/Venus.jpg);
+    }
+    
+    .imageearth {
+        background-image: url(Images/Jorden.jpg);
+    }
+    
+    .imagemars {
+        background-image: url(Images/Mars.jpg);
+    }
+    
+    .imagejupiter {
+        background-image: url(Images/Jupiter.jpg);
+    }
+    
+    .imagesaturn {
+        background-image: url(Images/saturn_full.jpg);
+    }
+    
+    .imageuranus {
+        background-image: url(Images/Uranus.jpg);
+    }
+    
+    .imageneptune {
+        background-image: url(Images/Neptune.jpg);
+    }
+    
+    .imagepluto {
+        background-image: url(Images/Pluto.jpg);
+    }
+
+    .textheader {
+        padding-left: 3%;
+    }
+
+    .text {
+        padding-right: 3%;
     }
 }
