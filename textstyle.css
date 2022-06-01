@@ -38,7 +38,7 @@ body {
 .content {
     grid-column: 2 / 3;
     grid-row: 2;
-    min-height: 92vh;
+    min-height: 120vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -56,14 +56,14 @@ body {
     grid-column: 1 / -1;
     padding-left: 2%;
     margin: 1.5vw 0 1.5vw 0;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .text {
     padding-left: 3%;
     padding-bottom: 3%;
     margin: 0;
-    font-size: 1.6vw;
+    font-size: 2.5vw;
     word-wrap: break-word;
 }
 
