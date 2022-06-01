@@ -8,7 +8,7 @@ body {
     margin: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 15fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .wrapper>* {
@@ -17,23 +17,20 @@ body {
 
 .headerimage {
     grid-column: 1 / -1;
+    min-height: 100vh;
     display: grid;
-    grid-template-rows: 45vh 45vh 10vh;
+    grid-template-rows: 5fr 85fr 10fr;
     background-image: url(Images/galax.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .header {
+    grid-row: 2;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     font-size: 3vw;
-    transition: transform 250ms, opacity 400ms;
-}
-
-.header:hover {
-    transform: scale(1.04);
 }
 
 .header>a {
@@ -43,6 +40,11 @@ body {
 .title {
     margin: 0;
     color: #fff;
+    transition: transform 250ms, opacity 400ms;
+}
+
+.title:hover {
+    transform: scale(1.04);
 }
 
 .navigation {
@@ -228,70 +230,70 @@ body {
     .thesun:after {
         content: 'Solen';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .mercury:after {
         content: 'Merkurius';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .venus:after {
         content: 'Venus';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .earth:after {
         content: 'Jorden';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .mars:after {
         content: 'Mars';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .jupiter:after {
         content: 'Jupiter';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .saturn:after {
         content: 'Saturnus';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .uranus:after {
         content: 'Uranus';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .neptune:after {
         content: 'Neptune';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
     .pluto:after {
         content: 'Pluto';
         color: #fff;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: bold;
     }
 
@@ -333,6 +335,19 @@ body {
 
     .pluto {
         background-image: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        font-size: 4.5vw;
+    }
+
+    .navigation {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
     }
 
 }
