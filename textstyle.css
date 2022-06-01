@@ -17,7 +17,7 @@ body {
 
 .navigation {
     grid-column: 1 / -1;
-    font-size: 1vw;
+    font-size: 1.4vw;
     display: grid;
     grid-template-columns: 2fr repeat(10, 1fr);
 }
@@ -38,7 +38,7 @@ body {
 .content {
     grid-column: 2 / 3;
     grid-row: 2;
-    min-height: 120vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -56,14 +56,14 @@ body {
     grid-column: 1 / -1;
     padding-left: 2%;
     margin: 1.5vw 0 1.5vw 0;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .text {
     padding-left: 3%;
     padding-bottom: 3%;
     margin: 0;
-    font-size: 2.5vw;
+    font-size: 2vw;
     word-wrap: break-word;
 }
 
@@ -291,5 +291,20 @@ body {
 
     .text {
         padding-right: 3%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navigation {
+        font-size: 2.4vw;
+    }
+
+    .textheader {
+        font-size: 7vw;
+    }
+
+    .text {
+        font-size: 4vw;
     }
 }
