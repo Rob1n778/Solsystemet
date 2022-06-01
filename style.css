@@ -11,7 +11,7 @@ body {
     grid-template-columns: 1fr 15fr 1fr;
 }
 
-.wrapper > * {
+.wrapper>* {
     grid-column: 2 / -2
 }
 
@@ -29,9 +29,14 @@ body {
     justify-content: center;
     align-items: flex-end;
     font-size: 3vw;
+    transition: transform 250ms, opacity 400ms;
 }
 
-.header > a {
+.header:hover {
+    transform: scale(1.04);
+}
+
+.header>a {
     text-decoration: none;
 }
 
@@ -43,28 +48,19 @@ body {
 .navigation {
     grid-row: 3 / 4;
     display: grid;
-    grid-template-columns: 2fr repeat(10, 1fr);
+    grid-template-columns: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr);
 }
 
 .planets {
     background-size: cover;
-    height: auto; 
-    width: auto; 
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    transition: transform 250ms, opacity 400ms;
 }
 
-.planets > a {
-    text-decoration: none;
-}
-
-.presstext {
-    color: transparent;
-    font-size: 1.8vw;
-    display: flex;
-    justify-content: center;
-}
-
-.oursystem {
-    background-image: url(Images/.jpg);
+.planets:hover {
+    transform: scale(1.08);
 }
 
 .thesun {
@@ -92,7 +88,6 @@ body {
 }
 
 .saturn {
-    grid-column: span 2;
     background-image: url(Images/Saturn_png.png);
 }
 
@@ -115,13 +110,18 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(13, 1fr);
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     font-weight: bold;
+    text-align: center;
 }
 
 .footer p a {
     text-decoration: none;
     color: #fff;
+}
+
+.footerp {
+    font-size: 1vw;
 }
 
 .aboutus {
@@ -137,7 +137,6 @@ body {
 .email {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-    font-size: 1vw;
 }
 
 .footersystem {
@@ -148,69 +147,192 @@ body {
 .footersun {
     grid-column: 4 / 5;
     grid-row: 3 / 4;
-    font-size: 1vw;
 }
 
 .footermercury {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
-    font-size: 1vw;
 }
 
 .footervenus {
     grid-column: 4 / 5;
     grid-row: 5 / 6;
-    font-size: 1vw;
 }
 
 .footerearth {
     grid-column: 4 / 5;
     grid-row: 6 / 7;
-    font-size: 1vw;
 }
 
 .footermars {
     grid-column: 4 / 5;
     grid-row: 7 / 8;
-    font-size: 1vw;
 }
 
 .footerjupiter {
     grid-column: 4 / 5;
     grid-row: 8 / 9;
-    font-size: 1vw;
 }
 
 .footersaturn {
     grid-column: 4 / 5;
     grid-row: 9 / 10;
-    font-size: 1vw;
 }
 
 .footeruranus {
     grid-column: 4 / 5;
     grid-row: 10 / 11;
-    font-size: 1vw;
 }
 
 .footerneptunus {
     grid-column: 4 / 5;
     grid-row: 11 / 12;
-    font-size: 1vw;
 }
 
 .footerpluto {
     grid-column: 4 / 5;
     grid-row: 12 / 13;
-    font-size: 1vw;
 }
 
-#logo {
-    grid-column: 5 / 6;
-    grid-row: 12 / 13;
+.toppen {
+    position: absolute;
     color: #fff;
     background-color: orange;
     padding: 1%;
     border-radius: 25%;
     font-size: 2vw;
+}
+
+@media (max-width: 1500px) {
+
+    div>a {
+        text-decoration: none;
+    }
+
+    .navigation {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .planets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 250ms, opacity 400ms;
+    }
+
+    .planets:hover {
+        transform: scale(1.2);
+
+    }
+
+    .thesun:after {
+        content: 'Solen';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .mercury:after {
+        content: 'Merkurius';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .venus:after {
+        content: 'Venus';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .earth:after {
+        content: 'Jorden';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .mars:after {
+        content: 'Mars';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .jupiter:after {
+        content: 'Jupiter';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .saturn:after {
+        content: 'Saturnus';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .uranus:after {
+        content: 'Uranus';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .neptune:after {
+        content: 'Neptune';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .pluto:after {
+        content: 'Pluto';
+        color: #fff;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .thesun {
+        background-image: none;
+    }
+
+    .mercury {
+        background-image: none;
+    }
+
+    .venus {
+        background-image: none;
+    }
+
+    .earth {
+        background-image: none;
+    }
+
+    .mars {
+        background-image: none;
+    }
+
+    .jupiter {
+        background-image: none;
+    }
+
+    .saturn {
+        background-image: none;
+    }
+
+    .uranus {
+        background-image: none;
+    }
+
+    .neptune {
+        background-image: none;
+    }
+
+    .pluto {
+        background-image: none;
+    }
+
 }

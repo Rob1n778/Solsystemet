@@ -28,7 +28,7 @@ function regenerate2() {
 }
 
 if (ie4 || ns6)
-    document.write('<span id="logo" style="position:absolute;top:-300;z-index:100">' + displayed + '</span>')
+    document.write('<div id="logo" style="position:absolute;top:-300;z-index:100">' + displayed + '</div>')
 
 function createtext() { //function for NS4
     staticimage = new Layer(5)
