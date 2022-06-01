@@ -51,6 +51,7 @@ body {
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr);
+    margin-right: 1%;
 }
 
 .planets {
@@ -348,6 +349,76 @@ body {
     .navigation {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr 1fr;
+    }
+
+    .thesun:after {
+        content: 'Solen';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .mercury:after {
+        content: 'Merkurius';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .venus:after {
+        content: 'Venus';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .earth:after {
+        content: 'Jorden';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .mars:after {
+        content: 'Mars';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .jupiter:after {
+        content: 'Jupiter';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .saturn:after {
+        content: 'Saturnus';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .uranus:after {
+        content: 'Uranus';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .neptune:after {
+        content: 'Neptune';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .pluto:after {
+        content: 'Pluto';
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
     }
 
 }
