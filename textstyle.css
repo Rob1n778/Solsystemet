@@ -1,4 +1,5 @@
 body {
+    background-color: #000;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-image: url(Images/galax.jpg);
@@ -34,6 +35,10 @@ body {
 .links a {
     color: #fff;
     text-decoration: none;
+}
+
+.linksoursystem {
+    font-size: 1vw;
 }
 
 .content {
@@ -120,7 +125,7 @@ body {
 }
 
 .imagesaturn {
-    background-image: url(Images/Saturn_full.jpg);
+    background-image: url(Images/saturn_full.jpg);
 }
 
 .imageuranus {
