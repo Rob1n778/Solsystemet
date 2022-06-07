@@ -19,14 +19,14 @@ body {
     grid-column: 1 / -1;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 5fr 85fr 10fr;
+    grid-template-rows: 85fr 10fr;
     background-image: url(Images/galax.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .header {
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .navigation {
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr);
     margin-right: 1%;
