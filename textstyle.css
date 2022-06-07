@@ -250,6 +250,10 @@ body {
         grid-row: 1 / -1;
     }
 
+    .links {
+        font-size: 1.6vw;
+    }
+
     .box {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr;
@@ -333,7 +337,7 @@ body {
 @media (max-width: 650px) {
 
     .links {
-        font-size: 1.7vw;
+        font-size: 1.8vw;
     }
 
     .textheader {

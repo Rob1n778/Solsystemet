@@ -331,7 +331,7 @@ body {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .header {
         font-size: 4.5vw;
@@ -345,71 +345,75 @@ body {
     .thesun:after {
         content: 'Solen';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .mercury:after {
         content: 'Merkurius';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .venus:after {
         content: 'Venus';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .earth:after {
         content: 'Jorden';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .mars:after {
         content: 'Mars';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .jupiter:after {
         content: 'Jupiter';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .saturn:after {
         content: 'Saturnus';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .uranus:after {
         content: 'Uranus';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .neptune:after {
         content: 'Neptune';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .pluto:after {
         content: 'Pluto';
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
+    }
+
+    .footer, .footerp {
+        font-size: 1.8vw;
     }
 
 }
